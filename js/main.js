@@ -1733,6 +1733,8 @@ document.addEventListener("DOMContentLoaded", function () {
     consoleEl = document.getElementById("console");
 
     addDarkModeEventListener("console", ".darkmode_switchbutton");
+    addDarkModeEventListener("nav-naoDark", ".components");
+    addDarkModeEventListener("console-naoDark", ".components");
 
     if (GLOBAL_CONFIG_SITE.isPost) {
       GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice();
@@ -1799,6 +1801,8 @@ document.addEventListener("DOMContentLoaded", function () {
     anzhiyu.getCustomPlayList();
     anzhiyu.addEventListenerConsoleMusicList(false);
     anzhiyu.initPaginationObserver();
+    // 随机背景 --> 背景滑动显掩
+    NaoKuo.setVideosBG().then(NaoKuo.BgScrollHide);
 
     setTimeout(() => {
       setInputFocusListener();
