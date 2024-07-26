@@ -1756,7 +1756,7 @@ document.addEventListener("DOMContentLoaded", function () {
     addHighlightTool();
     GLOBAL_CONFIG.isPhotoFigcaption && addPhotoFigcaption();
     scrollFn();
-
+    
     // 刷新时第一次滚动百分比
     window.scrollCollect && window.scrollCollect();
 
@@ -1802,8 +1802,7 @@ document.addEventListener("DOMContentLoaded", function () {
     anzhiyu.addEventListenerConsoleMusicList(false);
     anzhiyu.initPaginationObserver();
     // 随机背景 --> 背景滑动显掩
-    NaoKuo.setVideosBG().then(NaoKuo.BgScrollHide);
-
+    LN.setVideosBG().then(LN.BgScrollHide);
     setTimeout(() => {
       setInputFocusListener();
       if (typeof addFriendLinksInFooter === "function") {

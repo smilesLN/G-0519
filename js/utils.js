@@ -1435,14 +1435,14 @@ const anzhiyuPopupManager = {
 };
 
 
-const NaoKuo = {
+const LN = {
   /**
  * 背景滚动显隐
  */
   BgScrollHide: () => {
-    if (document.body.clientWidth <= 768 || !document.querySelector("#naokuo-home_bg")) return;
-    const $plcontainer = document.querySelector("#naokuo-home_bg"),
-      $Top_Video = document.querySelector("#naokuo-home_bg #Top_Video"),
+    if (document.body.clientWidth <= 768 || !document.querySelector("#LN-home_bg")) return;
+    const $plcontainer = document.querySelector("#LN-home_bg"),
+      $Top_Video = document.querySelector("#LN-home_bg #Top_Video"),
       Top_Video_toggle = {
         play: ($Top_Video) => {
           if ($Top_Video && $Top_Video.paused) {
@@ -1483,7 +1483,7 @@ const NaoKuo = {
  * 随机壁纸 autoplay=""
  */
   setVideosBG: async () => {
-    const $VideosBGID = document.querySelector("#naokuo-home_bg");
+    const $VideosBGID = document.querySelector("#LN-home_bg");
 
     if ($VideosBGID) {
       let videosStore = saveToLocal.get('videosStore');
@@ -1509,7 +1509,7 @@ const NaoKuo = {
           //若为第一次加载
           const $imgRandomInt = Math.floor(Math.random() * videosStore.images.length);
           // console.info("img", $imgRandomInt);
-          $VideosBGID.innerHTML = `<div id="naokuo-home_img" style="background-image: url('${videosStore.images[$imgRandomInt]}');"></div>`;
+          $VideosBGID.innerHTML = `<div id="LN-home_img" style="background-image: url('${videosStore.images[$imgRandomInt]}');"></div>`;
 
           if (document.body.clientWidth > 768) {
             sessionStorage.setItem("videoReload", true);
@@ -1519,5 +1519,6 @@ const NaoKuo = {
     }
   }
 }
+
 
 
