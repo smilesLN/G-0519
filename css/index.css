@@ -22263,13 +22263,13 @@ html.hide-aside .layout > div:first-child {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://pic.imgdb.cn/item/66a3020cd9c307b7e9058840.jpg);
+  background-image: url(https://pic.imgdb.cn/item/66a35cc1d9c307b7e96a58dc.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://pic.imgdb.cn/item/66a3020cd9c307b7e9058840.jpg);
+  background-image: url(https://pic.imgdb.cn/item/66a35cc1d9c307b7e96a58dc.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
