@@ -786,9 +786,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
     if (mode === "light") {
-      menuDarkmodeText.textContent = "关灯了🌙";
+      menuDarkmodeText.textContent = "关灯了🌛";
     } else {
-      menuDarkmodeText.textContent = "开灯了☀";
+      menuDarkmodeText.textContent = "开灯了🌞";
     }
 
     if (!GLOBAL_CONFIG_SITE.isPost) {
