@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: true,
   isToc: false,
-  postUpdate: '2024-08-13 15:07:26',
+  postUpdate: '2024-08-14 15:11:16',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -162,7 +162,7 @@
             else if (isNotSpecified || hasNoSupport) {
               const now = new Date()
               const hour = now.getHours()
-              const isNight = hour <= 6 || hour >= 18
+              const isNight = hour <= 8 || hour >= 20
               isNight ? activateDarkMode() : activateLightMode()
             }
             window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
