@@ -22611,6 +22611,74 @@ html.hide-aside .layout > div:first-child {
   }
 }
 /* 标签页卡片模式end */
+
+
+/* 右侧LOVE展示star */
+@media screen and (max-width: 576px)  {
+
+  .nav-search-btn {
+      right: 0!important
+  }
+}
+.couple {
+  text-align: center;
+}
+
+.info .pic,.couple .pic {
+  border-radius: 50%;
+  width: 5rem;
+  background: #fff;
+  padding: 5px;
+}
+
+.couple-love {
+  /* width: 80px; */
+  width: 35px;
+  /* margin:  0; */
+  margin: 20px 0;
+  animation: heartbeat 1.33s ease-in-out infinite;
+}
+
+.wow .item-headline{
+  text-align: center;
+} 
+
+@keyframes heartbeat {
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+  }
+  50% {
+      -webkit-transform: scale(.8);
+      transform: scale(.8)
+  }
+  to {
+      -webkit-transform: scale(1);
+      transform: scale(1)
+  }
+}
+#our-company {
+  text-align: center;
+  font-size: 1rem;
+  color: #7d7474;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  user-select: none;
+}
+#our-company span {
+  margin: 0 .25rem;
+  vertical-align: middle;
+}
+.运行年月日图标 {
+  width: 3em;
+  height: 3em;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* 右侧LOVE展示end */
+
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
   display: flex;
